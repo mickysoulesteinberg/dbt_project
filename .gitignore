@@ -6,6 +6,7 @@ dbt_internal_packages/
 
 # Sensitive information
 profiles.yml
+.gitignore
 
 # VS Code settings
 .vscode/
