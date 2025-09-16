@@ -1,0 +1,11 @@
+# dbt artifacts and packages
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+
+# Sensitive information
+profiles.yml
+
+# VS Code settings
+.vscode/
