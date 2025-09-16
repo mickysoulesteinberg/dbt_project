@@ -26,7 +26,6 @@ sources:
           - name: file_name
             description: The original file name, e.g. yob2022.txt
 
-
 models:
   - name: stg_ssa_data__state_names
     config:
