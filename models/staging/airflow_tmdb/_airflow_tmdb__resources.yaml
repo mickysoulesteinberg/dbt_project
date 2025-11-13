@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: airflow_tmdb
+    tables:
+      - name: top_movies
+      - name: top_movies_credits
+
+models:
+  - name: stg__tmdb__top_movies
+    config:
+      materialized: table
+      cluster_by: id
+  - name: stg__tmdb__top_movies_credits
+    config:
+      materialized: table
+      cluster_by: movie_id

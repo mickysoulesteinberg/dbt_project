@@ -9,3 +9,9 @@ profiles.yml
 
 # VS Code
 .vscode/
+
+# Ignore placeholder/test/dev files and folders
+*_scratch_*
+*_test_*
+*_todo_*
+notes_to_self/

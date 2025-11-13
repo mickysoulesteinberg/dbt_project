@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: airflow_ssa
+    description: Data from US SSA
+    tables:
+      - name: names
+      - name: state_names
+      - name: territory_names
