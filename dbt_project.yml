@@ -17,3 +17,10 @@ clean-targets:
 
 data_tests:
   +store_failures: true
+
+models:
+  dbt_project:
+    helpscout:
+      +materialized: table
+      +schema: helpscout_project
+

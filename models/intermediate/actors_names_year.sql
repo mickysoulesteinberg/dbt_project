@@ -11,12 +11,12 @@ with top_actors_by_year as (
     select
         movie_title,
         release_year,
-        name as raw_name,
-        split(name, ' ')[(safe_offset(0))] as name,
-        character,
+        actor_name as raw_name,
+        actor_first_name as name,
+        character_name as character,
+        character_first_name,
         billing_order, gender, is_adult
-    from {{ ref('top_actors_by_year') }}
-    where billing_order < 10
+    from {{ ref('top_billed_by_year') }}
 ),
 top_first_names_by_year as (
     select release_year as year, gender, name,
